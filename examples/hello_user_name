@@ -1,0 +1,4 @@
+(set name (readline))
+(print "Hello, ")
+(print name)
+(print "!")
