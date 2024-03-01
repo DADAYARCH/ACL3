@@ -7,5 +7,5 @@
 (defun euler_problem (limit)
   (fibonacci_sum_even 1 2 limit))
 
-(print "Sum of the even-valued terms below 4 miliion: ")
+(print "Sum of terms: ")
 (printi (euler_problem 4000000))
