@@ -265,7 +265,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=23   acr=0x48 ipr=0x7 adr=0x14 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x0
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: '' <- 'H'
+  DEBUG   machine:signal_write_memory output: '' <- 'H'
   DEBUG   machine:execute_next_instruction tick=26   acr=0x48 ipr=0x8 adr=0x15b4 dar=0x48 spr=0x1ffc flr=0x1 stack_top=0x0
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=30   acr=0x48 ipr=0x9 adr=0x1ffd dar=0x15 spr=0x1ffc flr=0x1 stack_top=0x0
@@ -286,7 +286,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=50   acr=0x65 ipr=0x7 adr=0x15 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x1
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'H' <- 'e'
+  DEBUG   machine:signal_write_memory output: 'H' <- 'e'
   DEBUG   machine:execute_next_instruction tick=53   acr=0x65 ipr=0x8 adr=0x15b4 dar=0x65 spr=0x1ffc flr=0x1 stack_top=0x1
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=57   acr=0x65 ipr=0x9 adr=0x1ffd dar=0x16 spr=0x1ffc flr=0x1 stack_top=0x1
@@ -307,7 +307,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=77   acr=0x6c ipr=0x7 adr=0x16 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x2
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'He' <- 'l'
+  DEBUG   machine:signal_write_memory output: 'He' <- 'l'
   DEBUG   machine:execute_next_instruction tick=80   acr=0x6c ipr=0x8 adr=0x15b4 dar=0x6c spr=0x1ffc flr=0x1 stack_top=0x2
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=84   acr=0x6c ipr=0x9 adr=0x1ffd dar=0x17 spr=0x1ffc flr=0x1 stack_top=0x2
@@ -328,7 +328,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=104  acr=0x6c ipr=0x7 adr=0x17 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x3
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hel' <- 'l'
+  DEBUG   machine:signal_write_memory output: 'Hel' <- 'l'
   DEBUG   machine:execute_next_instruction tick=107  acr=0x6c ipr=0x8 adr=0x15b4 dar=0x6c spr=0x1ffc flr=0x1 stack_top=0x3
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=111  acr=0x6c ipr=0x9 adr=0x1ffd dar=0x18 spr=0x1ffc flr=0x1 stack_top=0x3
@@ -349,7 +349,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=131  acr=0x6f ipr=0x7 adr=0x18 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x4
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hell' <- 'o'
+  DEBUG   machine:signal_write_memory output: 'Hell' <- 'o'
   DEBUG   machine:execute_next_instruction tick=134  acr=0x6f ipr=0x8 adr=0x15b4 dar=0x6f spr=0x1ffc flr=0x1 stack_top=0x4
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=138  acr=0x6f ipr=0x9 adr=0x1ffd dar=0x19 spr=0x1ffc flr=0x1 stack_top=0x4
@@ -370,7 +370,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=158  acr=0x2c ipr=0x7 adr=0x19 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x5
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hello' <- ','
+  DEBUG   machine:signal_write_memory output: 'Hello' <- ','
   DEBUG   machine:execute_next_instruction tick=161  acr=0x2c ipr=0x8 adr=0x15b4 dar=0x2c spr=0x1ffc flr=0x1 stack_top=0x5
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=165  acr=0x2c ipr=0x9 adr=0x1ffd dar=0x1a spr=0x1ffc flr=0x1 stack_top=0x5
@@ -391,7 +391,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=185  acr=0x20 ipr=0x7 adr=0x1a dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x6
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hello,' <- ' '
+  DEBUG   machine:signal_write_memory output: 'Hello,' <- ' '
   DEBUG   machine:execute_next_instruction tick=188  acr=0x20 ipr=0x8 adr=0x15b4 dar=0x20 spr=0x1ffc flr=0x1 stack_top=0x6
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=192  acr=0x20 ipr=0x9 adr=0x1ffd dar=0x1b spr=0x1ffc flr=0x1 stack_top=0x6
@@ -412,7 +412,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=212  acr=0x77 ipr=0x7 adr=0x1b dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x7
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hello, ' <- 'w'
+  DEBUG   machine:signal_write_memory output: 'Hello, ' <- 'w'
   DEBUG   machine:execute_next_instruction tick=215  acr=0x77 ipr=0x8 adr=0x15b4 dar=0x77 spr=0x1ffc flr=0x1 stack_top=0x7
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=219  acr=0x77 ipr=0x9 adr=0x1ffd dar=0x1c spr=0x1ffc flr=0x1 stack_top=0x7
@@ -433,7 +433,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=239  acr=0x6f ipr=0x7 adr=0x1c dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x8
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hello, w' <- 'o'
+  DEBUG   machine:signal_write_memory output: 'Hello, w' <- 'o'
   DEBUG   machine:execute_next_instruction tick=242  acr=0x6f ipr=0x8 adr=0x15b4 dar=0x6f spr=0x1ffc flr=0x1 stack_top=0x8
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=246  acr=0x6f ipr=0x9 adr=0x1ffd dar=0x1d spr=0x1ffc flr=0x1 stack_top=0x8
@@ -454,7 +454,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=266  acr=0x72 ipr=0x7 adr=0x1d dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x9
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hello, wo' <- 'r'
+  DEBUG   machine:signal_write_memory output: 'Hello, wo' <- 'r'
   DEBUG   machine:execute_next_instruction tick=269  acr=0x72 ipr=0x8 adr=0x15b4 dar=0x72 spr=0x1ffc flr=0x1 stack_top=0x9
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=273  acr=0x72 ipr=0x9 adr=0x1ffd dar=0x1e spr=0x1ffc flr=0x1 stack_top=0x9
@@ -475,7 +475,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=293  acr=0x6c ipr=0x7 adr=0x1e dar=0x0 spr=0x1ffc flr=0x1 stack_top=0xa
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hello, wor' <- 'l'
+  DEBUG   machine:signal_write_memory output: 'Hello, wor' <- 'l'
   DEBUG   machine:execute_next_instruction tick=296  acr=0x6c ipr=0x8 adr=0x15b4 dar=0x6c spr=0x1ffc flr=0x1 stack_top=0xa
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=300  acr=0x6c ipr=0x9 adr=0x1ffd dar=0x1f spr=0x1ffc flr=0x1 stack_top=0xa
@@ -496,7 +496,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=320  acr=0x64 ipr=0x7 adr=0x1f dar=0x0 spr=0x1ffc flr=0x1 stack_top=0xb
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hello, worl' <- 'd'
+  DEBUG   machine:signal_write_memory output: 'Hello, worl' <- 'd'
   DEBUG   machine:execute_next_instruction tick=323  acr=0x64 ipr=0x8 adr=0x15b4 dar=0x64 spr=0x1ffc flr=0x1 stack_top=0xb
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=327  acr=0x64 ipr=0x9 adr=0x1ffd dar=0x20 spr=0x1ffc flr=0x1 stack_top=0xb
@@ -517,7 +517,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=347  acr=0x21 ipr=0x7 adr=0x20 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0xc
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Hello, world' <- '!'
+  DEBUG   machine:signal_write_memory output: 'Hello, world' <- '!'
   DEBUG   machine:execute_next_instruction tick=350  acr=0x21 ipr=0x8 adr=0x15b4 dar=0x21 spr=0x1ffc flr=0x1 stack_top=0xc
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=354  acr=0x21 ipr=0x9 adr=0x1ffd dar=0x21 spr=0x1ffc flr=0x1 stack_top=0xc

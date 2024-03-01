@@ -1181,7 +1181,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=23   acr=0x53 ipr=0x3b adr=0x79 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x0
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: '' <- 'S'
+  DEBUG   machine:signal_write_memory output: '' <- 'S'
   DEBUG   machine:execute_next_instruction tick=26   acr=0x53 ipr=0x3c adr=0x15b4 dar=0x53 spr=0x1ffc flr=0x1 stack_top=0x0
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=30   acr=0x53 ipr=0x3d adr=0x1ffd dar=0x7a spr=0x1ffc flr=0x1 stack_top=0x0
@@ -1202,7 +1202,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=50   acr=0x75 ipr=0x3b adr=0x7a dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x1
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'S' <- 'u'
+  DEBUG   machine:signal_write_memory output: 'S' <- 'u'
   DEBUG   machine:execute_next_instruction tick=53   acr=0x75 ipr=0x3c adr=0x15b4 dar=0x75 spr=0x1ffc flr=0x1 stack_top=0x1
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=57   acr=0x75 ipr=0x3d adr=0x1ffd dar=0x7b spr=0x1ffc flr=0x1 stack_top=0x1
@@ -1223,7 +1223,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=77   acr=0x6d ipr=0x3b adr=0x7b dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x2
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Su' <- 'm'
+  DEBUG   machine:signal_write_memory output: 'Su' <- 'm'
   DEBUG   machine:execute_next_instruction tick=80   acr=0x6d ipr=0x3c adr=0x15b4 dar=0x6d spr=0x1ffc flr=0x1 stack_top=0x2
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=84   acr=0x6d ipr=0x3d adr=0x1ffd dar=0x7c spr=0x1ffc flr=0x1 stack_top=0x2
@@ -1244,7 +1244,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=104  acr=0x20 ipr=0x3b adr=0x7c dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x3
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum' <- ' '
+  DEBUG   machine:signal_write_memory output: 'Sum' <- ' '
   DEBUG   machine:execute_next_instruction tick=107  acr=0x20 ipr=0x3c adr=0x15b4 dar=0x20 spr=0x1ffc flr=0x1 stack_top=0x3
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=111  acr=0x20 ipr=0x3d adr=0x1ffd dar=0x7d spr=0x1ffc flr=0x1 stack_top=0x3
@@ -1265,7 +1265,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=131  acr=0x6f ipr=0x3b adr=0x7d dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x4
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum ' <- 'o'
+  DEBUG   machine:signal_write_memory output: 'Sum ' <- 'o'
   DEBUG   machine:execute_next_instruction tick=134  acr=0x6f ipr=0x3c adr=0x15b4 dar=0x6f spr=0x1ffc flr=0x1 stack_top=0x4
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=138  acr=0x6f ipr=0x3d adr=0x1ffd dar=0x7e spr=0x1ffc flr=0x1 stack_top=0x4
@@ -1286,7 +1286,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=158  acr=0x66 ipr=0x3b adr=0x7e dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x5
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum o' <- 'f'
+  DEBUG   machine:signal_write_memory output: 'Sum o' <- 'f'
   DEBUG   machine:execute_next_instruction tick=161  acr=0x66 ipr=0x3c adr=0x15b4 dar=0x66 spr=0x1ffc flr=0x1 stack_top=0x5
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=165  acr=0x66 ipr=0x3d adr=0x1ffd dar=0x7f spr=0x1ffc flr=0x1 stack_top=0x5
@@ -1307,7 +1307,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=185  acr=0x20 ipr=0x3b adr=0x7f dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x6
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of' <- ' '
+  DEBUG   machine:signal_write_memory output: 'Sum of' <- ' '
   DEBUG   machine:execute_next_instruction tick=188  acr=0x20 ipr=0x3c adr=0x15b4 dar=0x20 spr=0x1ffc flr=0x1 stack_top=0x6
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=192  acr=0x20 ipr=0x3d adr=0x1ffd dar=0x80 spr=0x1ffc flr=0x1 stack_top=0x6
@@ -1328,7 +1328,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=212  acr=0x74 ipr=0x3b adr=0x80 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x7
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of ' <- 't'
+  DEBUG   machine:signal_write_memory output: 'Sum of ' <- 't'
   DEBUG   machine:execute_next_instruction tick=215  acr=0x74 ipr=0x3c adr=0x15b4 dar=0x74 spr=0x1ffc flr=0x1 stack_top=0x7
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=219  acr=0x74 ipr=0x3d adr=0x1ffd dar=0x81 spr=0x1ffc flr=0x1 stack_top=0x7
@@ -1349,7 +1349,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=239  acr=0x65 ipr=0x3b adr=0x81 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x8
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of t' <- 'e'
+  DEBUG   machine:signal_write_memory output: 'Sum of t' <- 'e'
   DEBUG   machine:execute_next_instruction tick=242  acr=0x65 ipr=0x3c adr=0x15b4 dar=0x65 spr=0x1ffc flr=0x1 stack_top=0x8
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=246  acr=0x65 ipr=0x3d adr=0x1ffd dar=0x82 spr=0x1ffc flr=0x1 stack_top=0x8
@@ -1370,7 +1370,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=266  acr=0x72 ipr=0x3b adr=0x82 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0x9
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of te' <- 'r'
+  DEBUG   machine:signal_write_memory output: 'Sum of te' <- 'r'
   DEBUG   machine:execute_next_instruction tick=269  acr=0x72 ipr=0x3c adr=0x15b4 dar=0x72 spr=0x1ffc flr=0x1 stack_top=0x9
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=273  acr=0x72 ipr=0x3d adr=0x1ffd dar=0x83 spr=0x1ffc flr=0x1 stack_top=0x9
@@ -1391,7 +1391,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=293  acr=0x6d ipr=0x3b adr=0x83 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0xa
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of ter' <- 'm'
+  DEBUG   machine:signal_write_memory output: 'Sum of ter' <- 'm'
   DEBUG   machine:execute_next_instruction tick=296  acr=0x6d ipr=0x3c adr=0x15b4 dar=0x6d spr=0x1ffc flr=0x1 stack_top=0xa
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=300  acr=0x6d ipr=0x3d adr=0x1ffd dar=0x84 spr=0x1ffc flr=0x1 stack_top=0xa
@@ -1412,7 +1412,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=320  acr=0x73 ipr=0x3b adr=0x84 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0xb
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of term' <- 's'
+  DEBUG   machine:signal_write_memory output: 'Sum of term' <- 's'
   DEBUG   machine:execute_next_instruction tick=323  acr=0x73 ipr=0x3c adr=0x15b4 dar=0x73 spr=0x1ffc flr=0x1 stack_top=0xb
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=327  acr=0x73 ipr=0x3d adr=0x1ffd dar=0x85 spr=0x1ffc flr=0x1 stack_top=0xb
@@ -1433,7 +1433,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=347  acr=0x3a ipr=0x3b adr=0x85 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0xc
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms' <- ':'
+  DEBUG   machine:signal_write_memory output: 'Sum of terms' <- ':'
   DEBUG   machine:execute_next_instruction tick=350  acr=0x3a ipr=0x3c adr=0x15b4 dar=0x3a spr=0x1ffc flr=0x1 stack_top=0xc
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=354  acr=0x3a ipr=0x3d adr=0x1ffd dar=0x86 spr=0x1ffc flr=0x1 stack_top=0xc
@@ -1454,7 +1454,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=374  acr=0x20 ipr=0x3b adr=0x86 dar=0x0 spr=0x1ffc flr=0x1 stack_top=0xd
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms:' <- ' '
+  DEBUG   machine:signal_write_memory output: 'Sum of terms:' <- ' '
   DEBUG   machine:execute_next_instruction tick=377  acr=0x20 ipr=0x3c adr=0x15b4 dar=0x20 spr=0x1ffc flr=0x1 stack_top=0xd
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=381  acr=0x20 ipr=0x3d adr=0x1ffd dar=0x87 spr=0x1ffc flr=0x1 stack_top=0xd
@@ -4561,7 +4561,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=4381 acr=0x34 ipr=0x3b adr=0x96 dar=0x0 spr=0x1ff9 flr=0x1 stack_top=0x0
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms: ' <- '4'
+  DEBUG   machine:signal_write_memory output: 'Sum of terms: ' <- '4'
   DEBUG   machine:execute_next_instruction tick=4384 acr=0x34 ipr=0x3c adr=0x15b4 dar=0x34 spr=0x1ff9 flr=0x1 stack_top=0x0
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=4388 acr=0x34 ipr=0x3d adr=0x1ffa dar=0x97 spr=0x1ff9 flr=0x1 stack_top=0x0
@@ -4582,7 +4582,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=4408 acr=0x36 ipr=0x3b adr=0x97 dar=0x0 spr=0x1ff9 flr=0x1 stack_top=0x1
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms: 4' <- '6'
+  DEBUG   machine:signal_write_memory output: 'Sum of terms: 4' <- '6'
   DEBUG   machine:execute_next_instruction tick=4411 acr=0x36 ipr=0x3c adr=0x15b4 dar=0x36 spr=0x1ff9 flr=0x1 stack_top=0x1
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=4415 acr=0x36 ipr=0x3d adr=0x1ffa dar=0x98 spr=0x1ff9 flr=0x1 stack_top=0x1
@@ -4603,7 +4603,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=4435 acr=0x31 ipr=0x3b adr=0x98 dar=0x0 spr=0x1ff9 flr=0x1 stack_top=0x2
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms: 46' <- '1'
+  DEBUG   machine:signal_write_memory output: 'Sum of terms: 46' <- '1'
   DEBUG   machine:execute_next_instruction tick=4438 acr=0x31 ipr=0x3c adr=0x15b4 dar=0x31 spr=0x1ff9 flr=0x1 stack_top=0x2
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=4442 acr=0x31 ipr=0x3d adr=0x1ffa dar=0x99 spr=0x1ff9 flr=0x1 stack_top=0x2
@@ -4624,7 +4624,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=4462 acr=0x33 ipr=0x3b adr=0x99 dar=0x0 spr=0x1ff9 flr=0x1 stack_top=0x3
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms: 461' <- '3'
+  DEBUG   machine:signal_write_memory output: 'Sum of terms: 461' <- '3'
   DEBUG   machine:execute_next_instruction tick=4465 acr=0x33 ipr=0x3c adr=0x15b4 dar=0x33 spr=0x1ff9 flr=0x1 stack_top=0x3
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=4469 acr=0x33 ipr=0x3d adr=0x1ffa dar=0x9a spr=0x1ff9 flr=0x1 stack_top=0x3
@@ -4645,7 +4645,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=4489 acr=0x37 ipr=0x3b adr=0x9a dar=0x0 spr=0x1ff9 flr=0x1 stack_top=0x4
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms: 4613' <- '7'
+  DEBUG   machine:signal_write_memory output: 'Sum of terms: 4613' <- '7'
   DEBUG   machine:execute_next_instruction tick=4492 acr=0x37 ipr=0x3c adr=0x15b4 dar=0x37 spr=0x1ff9 flr=0x1 stack_top=0x4
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=4496 acr=0x37 ipr=0x3d adr=0x1ffa dar=0x9b spr=0x1ff9 flr=0x1 stack_top=0x4
@@ -4666,7 +4666,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=4516 acr=0x33 ipr=0x3b adr=0x9b dar=0x0 spr=0x1ff9 flr=0x1 stack_top=0x5
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms: 46137' <- '3'
+  DEBUG   machine:signal_write_memory output: 'Sum of terms: 46137' <- '3'
   DEBUG   machine:execute_next_instruction tick=4519 acr=0x33 ipr=0x3c adr=0x15b4 dar=0x33 spr=0x1ff9 flr=0x1 stack_top=0x5
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=4523 acr=0x33 ipr=0x3d adr=0x1ffa dar=0x9c spr=0x1ff9 flr=0x1 stack_top=0x5
@@ -4687,7 +4687,7 @@ out_log: |
   DEBUG   machine:execute_next_instruction JUMP_EQUAL
   DEBUG   machine:execute_next_instruction tick=4543 acr=0x32 ipr=0x3b adr=0x9c dar=0x0 spr=0x1ff9 flr=0x1 stack_top=0x6
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'Sum of terms: 461373' <- '2'
+  DEBUG   machine:signal_write_memory output: 'Sum of terms: 461373' <- '2'
   DEBUG   machine:execute_next_instruction tick=4546 acr=0x32 ipr=0x3c adr=0x15b4 dar=0x32 spr=0x1ff9 flr=0x1 stack_top=0x6
   DEBUG   machine:execute_next_instruction INCREMENT
   DEBUG   machine:execute_next_instruction tick=4550 acr=0x32 ipr=0x3d adr=0x1ffa dar=0x9d spr=0x1ff9 flr=0x1 stack_top=0x6

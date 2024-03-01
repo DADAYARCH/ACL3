@@ -109,14 +109,14 @@ out_log: |
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=5    acr=0x0 ipr=0x4 adr=0x1ffe dar=0x7 spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction LOAD
-  DEBUG   machine:signal_read_data_memory input: 'h' <- 'ello\n'
+  DEBUG   machine:signal_read_memory input: 'h' <- 'ello\n'
   DEBUG   machine:execute_next_instruction tick=8    acr=0x68 ipr=0x5 adr=0x15b3 dar=0x68 spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction RETURN
   DEBUG   machine:execute_next_instruction tick=12   acr=0x68 ipr=0x7 adr=0x1ffe dar=0x7 spr=0x1fff flr=0x0 stack_top=?
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=16   acr=0x68 ipr=0x1 adr=0x1ffe dar=0x8 spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: '' <- 'h'
+  DEBUG   machine:signal_write_memory output: '' <- 'h'
   DEBUG   machine:execute_next_instruction tick=19   acr=0x68 ipr=0x2 adr=0x15b4 dar=0x68 spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction LOAD
   DEBUG   machine:execute_next_instruction tick=21   acr=0x1 ipr=0x3 adr=0x15b4 dar=0x1 spr=0x1ffe flr=0x0 stack_top=0x8
@@ -127,14 +127,14 @@ out_log: |
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=31   acr=0x1 ipr=0x4 adr=0x1ffe dar=0x7 spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction LOAD
-  DEBUG   machine:signal_read_data_memory input: 'e' <- 'llo\n'
+  DEBUG   machine:signal_read_memory input: 'e' <- 'llo\n'
   DEBUG   machine:execute_next_instruction tick=34   acr=0x65 ipr=0x5 adr=0x15b3 dar=0x65 spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction RETURN
   DEBUG   machine:execute_next_instruction tick=38   acr=0x65 ipr=0x7 adr=0x1ffe dar=0x7 spr=0x1fff flr=0x0 stack_top=?
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=42   acr=0x65 ipr=0x1 adr=0x1ffe dar=0x8 spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'h' <- 'e'
+  DEBUG   machine:signal_write_memory output: 'h' <- 'e'
   DEBUG   machine:execute_next_instruction tick=45   acr=0x65 ipr=0x2 adr=0x15b4 dar=0x65 spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction LOAD
   DEBUG   machine:execute_next_instruction tick=47   acr=0x1 ipr=0x3 adr=0x15b4 dar=0x1 spr=0x1ffe flr=0x0 stack_top=0x8
@@ -145,14 +145,14 @@ out_log: |
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=57   acr=0x1 ipr=0x4 adr=0x1ffe dar=0x7 spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction LOAD
-  DEBUG   machine:signal_read_data_memory input: 'l' <- 'lo\n'
+  DEBUG   machine:signal_read_memory input: 'l' <- 'lo\n'
   DEBUG   machine:execute_next_instruction tick=60   acr=0x6c ipr=0x5 adr=0x15b3 dar=0x6c spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction RETURN
   DEBUG   machine:execute_next_instruction tick=64   acr=0x6c ipr=0x7 adr=0x1ffe dar=0x7 spr=0x1fff flr=0x0 stack_top=?
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=68   acr=0x6c ipr=0x1 adr=0x1ffe dar=0x8 spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'he' <- 'l'
+  DEBUG   machine:signal_write_memory output: 'he' <- 'l'
   DEBUG   machine:execute_next_instruction tick=71   acr=0x6c ipr=0x2 adr=0x15b4 dar=0x6c spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction LOAD
   DEBUG   machine:execute_next_instruction tick=73   acr=0x1 ipr=0x3 adr=0x15b4 dar=0x1 spr=0x1ffe flr=0x0 stack_top=0x8
@@ -163,14 +163,14 @@ out_log: |
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=83   acr=0x1 ipr=0x4 adr=0x1ffe dar=0x7 spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction LOAD
-  DEBUG   machine:signal_read_data_memory input: 'l' <- 'o\n'
+  DEBUG   machine:signal_read_memory input: 'l' <- 'o\n'
   DEBUG   machine:execute_next_instruction tick=86   acr=0x6c ipr=0x5 adr=0x15b3 dar=0x6c spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction RETURN
   DEBUG   machine:execute_next_instruction tick=90   acr=0x6c ipr=0x7 adr=0x1ffe dar=0x7 spr=0x1fff flr=0x0 stack_top=?
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=94   acr=0x6c ipr=0x1 adr=0x1ffe dar=0x8 spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'hel' <- 'l'
+  DEBUG   machine:signal_write_memory output: 'hel' <- 'l'
   DEBUG   machine:execute_next_instruction tick=97   acr=0x6c ipr=0x2 adr=0x15b4 dar=0x6c spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction LOAD
   DEBUG   machine:execute_next_instruction tick=99   acr=0x1 ipr=0x3 adr=0x15b4 dar=0x1 spr=0x1ffe flr=0x0 stack_top=0x8
@@ -181,14 +181,14 @@ out_log: |
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=109  acr=0x1 ipr=0x4 adr=0x1ffe dar=0x7 spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction LOAD
-  DEBUG   machine:signal_read_data_memory input: 'o' <- '\n'
+  DEBUG   machine:signal_read_memory input: 'o' <- '\n'
   DEBUG   machine:execute_next_instruction tick=112  acr=0x6f ipr=0x5 adr=0x15b3 dar=0x6f spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction RETURN
   DEBUG   machine:execute_next_instruction tick=116  acr=0x6f ipr=0x7 adr=0x1ffe dar=0x7 spr=0x1fff flr=0x0 stack_top=?
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=120  acr=0x6f ipr=0x1 adr=0x1ffe dar=0x8 spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'hell' <- 'o'
+  DEBUG   machine:signal_write_memory output: 'hell' <- 'o'
   DEBUG   machine:execute_next_instruction tick=123  acr=0x6f ipr=0x2 adr=0x15b4 dar=0x6f spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction LOAD
   DEBUG   machine:execute_next_instruction tick=125  acr=0x1 ipr=0x3 adr=0x15b4 dar=0x1 spr=0x1ffe flr=0x0 stack_top=0x8
@@ -199,14 +199,14 @@ out_log: |
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=135  acr=0x1 ipr=0x4 adr=0x1ffe dar=0x7 spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction LOAD
-  DEBUG   machine:signal_read_data_memory input: '\n' <- ''
+  DEBUG   machine:signal_read_memory input: '\n' <- ''
   DEBUG   machine:execute_next_instruction tick=138  acr=0xa ipr=0x5 adr=0x15b3 dar=0xa spr=0x1ffe flr=0x0 stack_top=0x7
   DEBUG   machine:execute_next_instruction RETURN
   DEBUG   machine:execute_next_instruction tick=142  acr=0xa ipr=0x7 adr=0x1ffe dar=0x7 spr=0x1fff flr=0x0 stack_top=?
   DEBUG   machine:execute_next_instruction CALL
   DEBUG   machine:execute_next_instruction tick=146  acr=0xa ipr=0x1 adr=0x1ffe dar=0x8 spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction STORE
-  DEBUG   machine:signal_write_data_memory output: 'hello' <- '\n'
+  DEBUG   machine:signal_write_memory output: 'hello' <- '\n'
   DEBUG   machine:execute_next_instruction tick=149  acr=0xa ipr=0x2 adr=0x15b4 dar=0xa spr=0x1ffe flr=0x0 stack_top=0x8
   DEBUG   machine:execute_next_instruction LOAD
   DEBUG   machine:execute_next_instruction tick=151  acr=0x1 ipr=0x3 adr=0x15b4 dar=0x1 spr=0x1ffe flr=0x0 stack_top=0x8
