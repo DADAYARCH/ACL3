@@ -1088,7 +1088,7 @@ collected 4 items
 integration_test.py::test_translator_and_machine[golden/cat.yml] PASSED                                                                                                                                                          [ 25%]
 integration_test.py::test_translator_and_machine[golden/hello.yml] PASSED                                                                                                                                                        [ 50%]
 integration_test.py::test_translator_and_machine[golden/hello_user_name.yml] PASSED                                                                                                                                              [ 75%]
-integration_test.py::test_translator_and_machine[golden/prob1.yml] PASSED                                                                                                                                                        [100%]
+integration_test.py::test_translator_and_machine[golden/prob2.yml] PASSED                                                                                                                                                        [100%]
 
 ========================================================================================================== 4 passed in 1.33s ========================================================================================================== 
 
