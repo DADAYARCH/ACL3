@@ -8,7 +8,7 @@ from enum import Enum
 
 import lexer
 import stdlib
-from isa import Address, AddressType, Opcode, Term, serialize, Code
+from isa import Address, AddressType, Code, Opcode, Term, serialize
 
 
 def extract_tokens(src) -> list[lexer.TokenInfo]:
@@ -502,7 +502,9 @@ def translate_statement(statement: Statement, context: ProgramContext) -> list[T
     raise NotImplementedError(f"unknown tag of statement to translate, got {statement.tag}")
 
 
-def fill_instr_memory(func_table: dict[str, int], symbols: set[str], start_code: list[Term], context: ProgramContext) -> list[tuple[int, int, str, list[Term]]]:
+def fill_instr_memory(
+    func_table: dict[str, int], symbols: set[str], start_code: list[Term], context: ProgramContext
+) -> list[tuple[int, int, str, list[Term]]]:
     memory = []
     instr_pointer = 0
     memory.append((0, 1, "#", [Term(Opcode.JUMP, "start")]))
@@ -521,7 +523,13 @@ def fill_instr_memory(func_table: dict[str, int], symbols: set[str], start_code:
     return memory
 
 
-def fill_data_memory(offset: int, const_table: dict[str | int, int], var_table: dict[str, int], symbols: set[str], context: ProgramContext) -> list[tuple[int, int, str, list]]:
+def fill_data_memory(
+    offset: int,
+    const_table: dict[str | int, int],
+    var_table: dict[str, int],
+    symbols: set[str],
+    context: ProgramContext,
+) -> list[tuple[int, int, str, list]]:
     memory = []
     data_pointer = offset
     for str_const in context.str_const_table:
@@ -546,7 +554,13 @@ def fill_data_memory(offset: int, const_table: dict[str | int, int], var_table: 
     return memory
 
 
-def resolve_symbols(instr_memory: list[tuple[int, int, str, list[Term]]], symbols: set[str], func_table: dict[str, int], const_table: dict[str | int, int], var_table: dict[str, int]):
+def resolve_symbols(
+    instr_memory: list[tuple[int, int, str, list[Term]]],
+    symbols: set[str],
+    func_table: dict[str, int],
+    const_table: dict[str | int, int],
+    var_table: dict[str, int],
+):
     for block in instr_memory:
         for instr in block[3]:
             if isinstance(instr.arg, str):

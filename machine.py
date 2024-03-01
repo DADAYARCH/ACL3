@@ -6,7 +6,7 @@ import logging
 import typing
 from enum import Enum
 
-from isa import AddressType, Opcode, Term, Word, deserialize, addr_ops, value_ops, WordType
+from isa import AddressType, Opcode, Term, Word, WordType, addr_ops, deserialize, value_ops
 from stdlib import INPUT_PORT, OUTPUT_PORT
 
 
