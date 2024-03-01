@@ -64,9 +64,9 @@ branch_ops: list[Opcode] = [Opcode.JUMP_EQUAL, Opcode.JUMP_GREATER, Opcode.JUMP_
 class AddressType(str, Enum):
     EXACT = "#"
     ABSOLUTE = "*"
-    RELATIVE_IPR = "*ipr"
-    RELATIVE_SPR = "*spr"
-    RELATIVE_INDIRECT_SPR = "**spr"
+    RELATIVE_IPR = "*ip"
+    RELATIVE_SPR = "*sp"
+    RELATIVE_INDIRECT_SPR = "**sp"
 
 
 offset_addresses: list[AddressType] = [
