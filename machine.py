@@ -94,7 +94,7 @@ class DataPath:
         self.adr, self.dar, self.spr = 0, 0, memory_size
         self.flr = 0
 
-    def signal_read_data_memory(self):
+    def signal_read_memory(self):
         assert self.adr < self.memory_size, f"adr ({self.adr}) out of data_memory_size ({self.memory_size})"
         if self.adr == INPUT_PORT:
             if len(self.input_tokens) == 0:
@@ -107,7 +107,7 @@ class DataPath:
             assert word.tag == WordType.BINARY, f"unknown word tag to read {word.tag}"
             self.dar = word.val
 
-    def signal_write_data_memory(self):
+    def signal_write_memory(self):
         if self.adr == OUTPUT_PORT:
             assert 0 <= self.dar <= 0x10FFFF, f"dar contains unknown symbol, got {self.dar}"
             symbol = chr(self.dar)
@@ -213,10 +213,10 @@ class ControlUnit:
             Opcode.HALT: self.execute_halt_control_instruction,
             Opcode.CALL: self.execute_call_control_instruction,
             Opcode.RETURN: self.execute_return_control_instruction,
-            Opcode.JUMP_EQUAL: self.execute_branch_equal_control_instruction,
-            Opcode.JUMP_GREATER: self.execute_branch_greater_control_instruction,
-            Opcode.JUMP_GREATER_EQUAL: self.execute_branch_greater_equal_control_instruction,
-            Opcode.JUMP: self.execute_branch_any_control_instruction,
+            Opcode.JUMP_EQUAL: self.execute_jump_equal_control_instruction,
+            Opcode.JUMP_GREATER: self.execute_jump_greater_control_instruction,
+            Opcode.JUMP_GREATER_EQUAL: self.execute_jump_greater_equal_control_instruction,
+            Opcode.JUMP: self.execute_jump_control_instruction,
         }
 
         self.ordinary_instruction_executors: dict[Opcode, typing.Callable[[], None]] = {
@@ -249,7 +249,7 @@ class ControlUnit:
         self.tick()
         self.data_path.signal_alu(left=Reg.IPR, set_regs=[Reg.DAR], opts=plus_1)
         self.tick()
-        self.data_path.signal_write_data_memory()
+        self.data_path.signal_write_memory()
         self.tick()
         self.data_path.signal_alu(left=Reg.INR, set_regs=[Reg.IPR], opts=extend_20)
         self.tick()
@@ -257,7 +257,7 @@ class ControlUnit:
     def execute_pop_into(self, reg: Reg):
         self.data_path.signal_alu(right=Reg.SPR, set_regs=[Reg.ADR])
         self.tick()
-        self.data_path.signal_read_data_memory()
+        self.data_path.signal_read_memory()
         self.tick()
         self.data_path.signal_alu(right=Reg.DAR, set_regs=[reg])
         self.tick()
@@ -268,8 +268,8 @@ class ControlUnit:
     def execute_return_control_instruction(self, instr: Term):
         self.execute_pop_into(Reg.IPR)
 
-    def execute_branch_equal_control_instruction(self, instr: Term):
-        assert instr.arg.tag == AddressType.RELATIVE_IPR, f"unsupported addressing for bre, got {instr}"
+    def execute_jump_equal_control_instruction(self, instr: Term):
+        assert instr.arg.tag == AddressType.RELATIVE_IPR, f"unsupported addressing for jme, got {instr}"
         if self.data_path.zero():
             self.data_path.signal_alu(left=Reg.IPR, set_regs=[Reg.ADR])
             self.tick()
@@ -279,8 +279,8 @@ class ControlUnit:
             self.data_path.signal_alu(left=Reg.IPR, set_regs=[Reg.IPR], opts=plus_1)
             self.tick()
 
-    def execute_branch_greater_control_instruction(self, instr: Term):
-        assert instr.arg.tag == AddressType.RELATIVE_IPR, f"unsupported addressing for brg, got {instr}"
+    def execute_jump_greater_control_instruction(self, instr: Term):
+        assert instr.arg.tag == AddressType.RELATIVE_IPR, f"unsupported addressing for jmg, got {instr}"
         if self.data_path.negative() == self.data_path.overflow() and self.data_path.zero() is False:
             self.data_path.signal_alu(left=Reg.IPR, set_regs=[Reg.ADR])
             self.tick()
@@ -290,8 +290,8 @@ class ControlUnit:
             self.data_path.signal_alu(left=Reg.IPR, set_regs=[Reg.IPR], opts=plus_1)
             self.tick()
 
-    def execute_branch_greater_equal_control_instruction(self, instr: Term):
-        assert instr.arg.tag == AddressType.RELATIVE_IPR, f"unsupported addressing for brge, got {instr}"
+    def execute_jump_greater_equal_control_instruction(self, instr: Term):
+        assert instr.arg.tag == AddressType.RELATIVE_IPR, f"unsupported addressing for jmge, got {instr}"
         if self.data_path.negative() == self.data_path.overflow() or self.data_path.zero() is True:
             self.data_path.signal_alu(left=Reg.IPR, set_regs=[Reg.ADR])
             self.tick()
@@ -301,11 +301,11 @@ class ControlUnit:
             self.data_path.signal_alu(left=Reg.IPR, set_regs=[Reg.IPR], opts=plus_1)
             self.tick()
 
-    def execute_branch_any_control_instruction(self, instr: Term):
+    def execute_jump_control_instruction(self, instr: Term):
         assert instr.arg.tag in (
             AddressType.ABSOLUTE,
             AddressType.RELATIVE_IPR,
-        ), f"unsupported addressing for br, got {instr}"
+        ), f"unsupported addressing for jmp, got {instr}"
         if instr.arg.tag == AddressType.ABSOLUTE:
             self.data_path.signal_alu(left=Reg.INR, set_regs=[Reg.IPR], opts=extend_20)
             self.tick()
@@ -335,7 +335,7 @@ class ControlUnit:
         elif addr.tag == AddressType.RELATIVE_INDIRECT_SPR:
             self.data_path.signal_alu(left=Reg.INR, right=Reg.SPR, set_regs=[Reg.ADR], opts=extend_20)
             self.tick()
-            self.data_path.signal_read_data_memory()
+            self.data_path.signal_read_memory()
             self.tick()
             self.data_path.signal_alu(right=Reg.DAR, set_regs=[Reg.ADR])
             self.tick()
@@ -348,7 +348,7 @@ class ControlUnit:
             self.data_path.signal_alu(left=Reg.INR, set_regs=[Reg.DAR], opts=extend_20)
             self.tick()
         elif addr.tag in (AddressType.ABSOLUTE, AddressType.RELATIVE_SPR, AddressType.RELATIVE_INDIRECT_SPR):
-            self.data_path.signal_read_data_memory()
+            self.data_path.signal_read_memory()
             self.tick()
         else:
             raise NotImplementedError(f"unsupported address type for value fetching, got {instr}")
@@ -363,7 +363,7 @@ class ControlUnit:
     def execute_store(self):
         self.data_path.signal_alu(left=Reg.ACR, set_regs=[Reg.DAR])
         self.tick()
-        self.data_path.signal_write_data_memory()
+        self.data_path.signal_write_memory()
         self.tick()
 
     def execute_push(self):
@@ -371,7 +371,7 @@ class ControlUnit:
         self.tick()
         self.data_path.signal_alu(left=Reg.ACR, set_regs=[Reg.DAR])
         self.tick()
-        self.data_path.signal_write_data_memory()
+        self.data_path.signal_write_memory()
         self.tick()
 
     def execute_pop(self):
@@ -386,19 +386,19 @@ class ControlUnit:
         self.tick()
 
     def execute_inc(self):
-        self.data_path.signal_read_data_memory()
+        self.data_path.signal_read_memory()
         self.tick()
         self.data_path.signal_alu(right=Reg.DAR, set_regs=[Reg.DAR], opts=plus_1)
         self.tick()
-        self.data_path.signal_write_data_memory()
+        self.data_path.signal_write_memory()
         self.tick()
 
     def execute_dec(self):
-        self.data_path.signal_read_data_memory()
+        self.data_path.signal_read_memory()
         self.tick()
         self.data_path.signal_alu(right=Reg.DAR, set_regs=[Reg.DAR], opts=inv_left)
         self.tick()
-        self.data_path.signal_write_data_memory()
+        self.data_path.signal_write_memory()
         self.tick()
 
     def execute_modulo(self):
