@@ -50,7 +50,7 @@ def extend_bits(val: int, count: int) -> int:
     return val | ((-1) << count)
 
 
-mask_64 = (1 << 64) - 1
+mask_32 = (1 << 32) - 1
 
 n_flag = 0x8
 z_flag = 0x4
@@ -60,20 +60,20 @@ c_flag = 0x1
 
 def alu_sum(left: int, right: int, carry: int = 0) -> (int, int):
     result = 0
-    for i in range(64):
+    for i in range(32):
         bit_res = ((left >> i) & 0x1) + ((right >> i) & 0x1) + ((carry >> i) & 0x1)
         result |= (bit_res & 0x1) << i
         carry |= (bit_res & 0x2) << i
     flags = 0
-    if (result >> 63) & 0x1 == 1:
+    if (result >> 31) & 0x1 == 1:
         flags |= n_flag
-    if result & mask_64 == 0:
+    if result & mask_32 == 0:
         flags |= z_flag
-    if ((carry >> 63) & 0x1) != ((carry >> 64) & 0x1):
+    if ((carry >> 31) & 0x1) != ((carry >> 32) & 0x1):
         flags |= v_flag
-    if (carry >> 64) & 0x1 == 1:
+    if (carry >> 32) & 0x1 == 1:
         flags |= c_flag
-    return result & mask_64, flags
+    return result & mask_32, flags
 
 
 class DataPath:
@@ -151,7 +151,7 @@ class DataPath:
         left = extend_bits(left, 20) if opts & extend_20 != 0 else left
 
         if op == AluOp.SUM:
-            output, flags = alu_sum(left & mask_64, right & mask_64, 1 if opts & plus_1 != 0 else 0)
+            output, flags = alu_sum(left & mask_32, right & mask_32, 1 if opts & plus_1 != 0 else 0)
             if opts & set_flags != 0:
                 self.flr = flags
         elif op == AluOp.MUL:
@@ -167,7 +167,7 @@ class DataPath:
         else:
             raise NotImplementedError(op)
 
-        return output & mask_64
+        return output & mask_32
 
     def set_regs(self, alu_out: int, regs: list[Reg]):
         for reg in regs:
@@ -184,8 +184,8 @@ class DataPath:
     ):
         if set_regs is None:
             set_regs = []
-        left_val = extend_bits(self.left_alu_val(left), 64)
-        right_val = extend_bits(self.right_alu_val(right), 64)
+        left_val = extend_bits(self.left_alu_val(left), 32)
+        right_val = extend_bits(self.right_alu_val(right), 32)
         output = self.alu(left_val, right_val, alu_op, opts)
         self.set_regs(output, set_regs)
 
