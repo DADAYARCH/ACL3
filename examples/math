@@ -1,0 +1,4 @@
+(defun sum (a b c d e f g h i j)
+    (+ a b c d e f g h i j))
+
+(printi (sum 1 1 1 1 1 1 1 1 1 1))
