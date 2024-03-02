@@ -1,0 +1,3 @@
+(if (set name 5)
+    (printi name)
+    (print "no"))
