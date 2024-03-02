@@ -1,0 +1,1488 @@
+in_source: |
+  (printi (printi (printi (printi (printi (printi (print "recur")))))))
+in_stdin: |
+
+out_code: |-
+  [
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "jmp",
+        "arg": {
+          "tag": "*",
+          "val": 52
+        },
+        "desc": "'start' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "*sp",
+          "val": 2
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "add",
+        "arg": {
+          "tag": "#",
+          "val": 20
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "st",
+        "arg": {
+          "tag": "*sp",
+          "val": 2
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "st",
+        "arg": {
+          "tag": "**sp",
+          "val": 2
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "*sp",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "cmp",
+        "arg": {
+          "tag": "#",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "jmge",
+        "arg": {
+          "tag": "*ip",
+          "val": 5
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 45
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "st",
+        "arg": {
+          "tag": "*",
+          "val": 5556
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "*sp",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "inv"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "mod",
+        "arg": {
+          "tag": "#",
+          "val": 10
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "add",
+        "arg": {
+          "tag": "#",
+          "val": 48
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "dec",
+        "arg": {
+          "tag": "*sp",
+          "val": 3
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "st",
+        "arg": {
+          "tag": "**sp",
+          "val": 3
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "*sp",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "div",
+        "arg": {
+          "tag": "#",
+          "val": 10
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "cmp",
+        "arg": {
+          "tag": "#",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "jme",
+        "arg": {
+          "tag": "*ip",
+          "val": 3
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "st",
+        "arg": {
+          "tag": "*sp",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "jmp",
+        "arg": {
+          "tag": "*ip",
+          "val": -9
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "pop"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "*sp",
+          "val": 2
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "call",
+        "arg": {
+          "tag": "*",
+          "val": 36
+        },
+        "desc": "'print' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "*sp",
+          "val": 1
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "cmp",
+        "arg": {
+          "tag": "#",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "jmge",
+        "arg": {
+          "tag": "*ip",
+          "val": 2
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "inc",
+        "arg": {
+          "tag": "*sp",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "pop"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "popn"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ret"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "**sp",
+          "val": 1
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "cmp",
+        "arg": {
+          "tag": "#",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "jme",
+        "arg": {
+          "tag": "*ip",
+          "val": 8
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "st",
+        "arg": {
+          "tag": "*",
+          "val": 5556
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "inc",
+        "arg": {
+          "tag": "*sp",
+          "val": 1
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "inc",
+        "arg": {
+          "tag": "*sp",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "*sp",
+          "val": 0
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "cmp",
+        "arg": {
+          "tag": "#",
+          "val": 128
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "jme",
+        "arg": {
+          "tag": "*ip",
+          "val": 2
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "jmp",
+        "arg": {
+          "tag": "*ip",
+          "val": -9
+        }
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "pop"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "popn"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ret"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 85
+        },
+        "desc": "'anon$0' const"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 106
+        },
+        "desc": "'anon$1' const"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 127
+        },
+        "desc": "'anon$2' const"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 148
+        },
+        "desc": "'anon$3' const"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 169
+        },
+        "desc": "'anon$4' const"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 190
+        },
+        "desc": "'anon$5' const"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "push"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "ld",
+        "arg": {
+          "tag": "#",
+          "val": 79
+        },
+        "desc": "'recur' const"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "call",
+        "arg": {
+          "tag": "*",
+          "val": 36
+        },
+        "desc": "'print' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "call",
+        "arg": {
+          "tag": "*",
+          "val": 1
+        },
+        "desc": "'printi' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "popn"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "call",
+        "arg": {
+          "tag": "*",
+          "val": 1
+        },
+        "desc": "'printi' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "popn"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "call",
+        "arg": {
+          "tag": "*",
+          "val": 1
+        },
+        "desc": "'printi' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "popn"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "call",
+        "arg": {
+          "tag": "*",
+          "val": 1
+        },
+        "desc": "'printi' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "popn"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "call",
+        "arg": {
+          "tag": "*",
+          "val": 1
+        },
+        "desc": "'printi' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "popn"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "call",
+        "arg": {
+          "tag": "*",
+          "val": 1
+        },
+        "desc": "'printi' function"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "popn"
+      }
+    },
+    {
+      "tag": "INSTRUCTION",
+      "instr": {
+        "op": "halt"
+      }
+    },
+    {
+      "tag": "BINARY",
+      "val": "r"
+    },
+    {
+      "tag": "BINARY",
+      "val": "e"
+    },
+    {
+      "tag": "BINARY",
+      "val": "c"
+    },
+    {
+      "tag": "BINARY",
+      "val": "u"
+    },
+    {
+      "tag": "BINARY",
+      "val": "r"
+    },
+    {
+      "tag": "BINARY",
+      "val": "\u0000"
+    }
+  ]
+
+out_stdout: |
+  LoC: 2 code instr: 79
+  recur511111
+out_log: |
+  DEBUG   machine:execute_next_instruction tick=0    ac=0x0 ip=0x0 ar=0x0 dr=0x0 sp=0x1fff fl=0x0 stack_top=?
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=1    ac=0x0 ip=0x34 ar=0x0 dr=0x0 sp=0x1fff fl=0x0 stack_top=?
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=3    ac=0x55 ip=0x35 ar=0x0 dr=0x55 sp=0x1fff fl=0x0 stack_top=?
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=6    ac=0x55 ip=0x36 ar=0x1ffe dr=0x55 sp=0x1ffe fl=0x0 stack_top=0x55
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=8    ac=0x6a ip=0x37 ar=0x1ffe dr=0x6a sp=0x1ffe fl=0x0 stack_top=0x55
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=11   ac=0x6a ip=0x38 ar=0x1ffd dr=0x6a sp=0x1ffd fl=0x0 stack_top=0x6a
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=13   ac=0x7f ip=0x39 ar=0x1ffd dr=0x7f sp=0x1ffd fl=0x0 stack_top=0x6a
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=16   ac=0x7f ip=0x3a ar=0x1ffc dr=0x7f sp=0x1ffc fl=0x0 stack_top=0x7f
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=18   ac=0x94 ip=0x3b ar=0x1ffc dr=0x94 sp=0x1ffc fl=0x0 stack_top=0x7f
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=21   ac=0x94 ip=0x3c ar=0x1ffb dr=0x94 sp=0x1ffb fl=0x0 stack_top=0x94
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=23   ac=0xa9 ip=0x3d ar=0x1ffb dr=0xa9 sp=0x1ffb fl=0x0 stack_top=0x94
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=26   ac=0xa9 ip=0x3e ar=0x1ffa dr=0xa9 sp=0x1ffa fl=0x0 stack_top=0xa9
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=28   ac=0xbe ip=0x3f ar=0x1ffa dr=0xbe sp=0x1ffa fl=0x0 stack_top=0xa9
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=31   ac=0xbe ip=0x40 ar=0x1ff9 dr=0xbe sp=0x1ff9 fl=0x0 stack_top=0xbe
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=33   ac=0x4f ip=0x41 ar=0x1ff9 dr=0x4f sp=0x1ff9 fl=0x0 stack_top=0xbe
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=37   ac=0x4f ip=0x24 ar=0x1ff8 dr=0x42 sp=0x1ff8 fl=0x0 stack_top=0x42
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=40   ac=0x4f ip=0x25 ar=0x1ff7 dr=0x4f sp=0x1ff7 fl=0x0 stack_top=0x4f
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=42   ac=0x0 ip=0x26 ar=0x1ff7 dr=0x0 sp=0x1ff7 fl=0x0 stack_top=0x4f
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=45   ac=0x0 ip=0x27 ar=0x1ff6 dr=0x0 sp=0x1ff6 fl=0x0 stack_top=0x0
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=50   ac=0x72 ip=0x28 ar=0x4f dr=0x72 sp=0x1ff6 fl=0x0 stack_top=0x0
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=52   ac=0x72 ip=0x29 ar=0x4f dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=53   ac=0x72 ip=0x2a ar=0x4f dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: '' <- 'r'
+  DEBUG   machine:execute_next_instruction tick=56   ac=0x72 ip=0x2b ar=0x15b4 dr=0x72 sp=0x1ff6 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=60   ac=0x72 ip=0x2c ar=0x1ff7 dr=0x50 sp=0x1ff6 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=64   ac=0x72 ip=0x2d ar=0x1ff6 dr=0x1 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=67   ac=0x1 ip=0x2e ar=0x1ff6 dr=0x1 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=69   ac=0x1 ip=0x2f ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=70   ac=0x1 ip=0x30 ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=72   ac=0x1 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=77   ac=0x65 ip=0x28 ar=0x50 dr=0x65 sp=0x1ff6 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=79   ac=0x65 ip=0x29 ar=0x50 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=80   ac=0x65 ip=0x2a ar=0x50 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'r' <- 'e'
+  DEBUG   machine:execute_next_instruction tick=83   ac=0x65 ip=0x2b ar=0x15b4 dr=0x65 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=87   ac=0x65 ip=0x2c ar=0x1ff7 dr=0x51 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=91   ac=0x65 ip=0x2d ar=0x1ff6 dr=0x2 sp=0x1ff6 fl=0x1 stack_top=0x2
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=94   ac=0x2 ip=0x2e ar=0x1ff6 dr=0x2 sp=0x1ff6 fl=0x1 stack_top=0x2
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=96   ac=0x2 ip=0x2f ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x2
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=97   ac=0x2 ip=0x30 ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x2
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=99   ac=0x2 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x2
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=104  ac=0x63 ip=0x28 ar=0x51 dr=0x63 sp=0x1ff6 fl=0x8 stack_top=0x2
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=106  ac=0x63 ip=0x29 ar=0x51 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x2
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=107  ac=0x63 ip=0x2a ar=0x51 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x2
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 're' <- 'c'
+  DEBUG   machine:execute_next_instruction tick=110  ac=0x63 ip=0x2b ar=0x15b4 dr=0x63 sp=0x1ff6 fl=0x1 stack_top=0x2
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=114  ac=0x63 ip=0x2c ar=0x1ff7 dr=0x52 sp=0x1ff6 fl=0x1 stack_top=0x2
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=118  ac=0x63 ip=0x2d ar=0x1ff6 dr=0x3 sp=0x1ff6 fl=0x1 stack_top=0x3
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=121  ac=0x3 ip=0x2e ar=0x1ff6 dr=0x3 sp=0x1ff6 fl=0x1 stack_top=0x3
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=123  ac=0x3 ip=0x2f ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x3
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=124  ac=0x3 ip=0x30 ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x3
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=126  ac=0x3 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x3
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=131  ac=0x75 ip=0x28 ar=0x52 dr=0x75 sp=0x1ff6 fl=0x8 stack_top=0x3
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=133  ac=0x75 ip=0x29 ar=0x52 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x3
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=134  ac=0x75 ip=0x2a ar=0x52 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x3
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'rec' <- 'u'
+  DEBUG   machine:execute_next_instruction tick=137  ac=0x75 ip=0x2b ar=0x15b4 dr=0x75 sp=0x1ff6 fl=0x1 stack_top=0x3
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=141  ac=0x75 ip=0x2c ar=0x1ff7 dr=0x53 sp=0x1ff6 fl=0x1 stack_top=0x3
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=145  ac=0x75 ip=0x2d ar=0x1ff6 dr=0x4 sp=0x1ff6 fl=0x1 stack_top=0x4
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=148  ac=0x4 ip=0x2e ar=0x1ff6 dr=0x4 sp=0x1ff6 fl=0x1 stack_top=0x4
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=150  ac=0x4 ip=0x2f ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x4
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=151  ac=0x4 ip=0x30 ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x4
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=153  ac=0x4 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x4
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=158  ac=0x72 ip=0x28 ar=0x53 dr=0x72 sp=0x1ff6 fl=0x8 stack_top=0x4
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=160  ac=0x72 ip=0x29 ar=0x53 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x4
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=161  ac=0x72 ip=0x2a ar=0x53 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x4
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'recu' <- 'r'
+  DEBUG   machine:execute_next_instruction tick=164  ac=0x72 ip=0x2b ar=0x15b4 dr=0x72 sp=0x1ff6 fl=0x1 stack_top=0x4
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=168  ac=0x72 ip=0x2c ar=0x1ff7 dr=0x54 sp=0x1ff6 fl=0x1 stack_top=0x4
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=172  ac=0x72 ip=0x2d ar=0x1ff6 dr=0x5 sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=175  ac=0x5 ip=0x2e ar=0x1ff6 dr=0x5 sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=177  ac=0x5 ip=0x2f ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x5
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=178  ac=0x5 ip=0x30 ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x5
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=180  ac=0x5 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x5
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=185  ac=0x0 ip=0x28 ar=0x54 dr=0x0 sp=0x1ff6 fl=0x8 stack_top=0x5
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=187  ac=0x0 ip=0x29 ar=0x54 dr=0x0 sp=0x1ff6 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=189  ac=0x0 ip=0x31 ar=0x29 dr=0x0 sp=0x1ff6 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=193  ac=0x5 ip=0x32 ar=0x1ff6 dr=0x5 sp=0x1ff7 fl=0x5 stack_top=0x54
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=194  ac=0x5 ip=0x33 ar=0x1ff6 dr=0x5 sp=0x1ff8 fl=0x5 stack_top=0x42
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=198  ac=0x5 ip=0x42 ar=0x1ff8 dr=0x42 sp=0x1ff9 fl=0x5 stack_top=0xbe
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=202  ac=0x5 ip=0x1 ar=0x1ff8 dr=0x43 sp=0x1ff8 fl=0x5 stack_top=0x43
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=205  ac=0x5 ip=0x2 ar=0x1ff7 dr=0x5 sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=208  ac=0xbe ip=0x3 ar=0x1ff9 dr=0xbe sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=210  ac=0xd2 ip=0x4 ar=0x1ff9 dr=0x14 sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=213  ac=0xd2 ip=0x5 ar=0x1ff9 dr=0xd2 sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=215  ac=0x0 ip=0x6 ar=0x1ff9 dr=0x0 sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=220  ac=0x0 ip=0x7 ar=0xd2 dr=0x0 sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=223  ac=0x5 ip=0x8 ar=0x1ff7 dr=0x5 sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=225  ac=0x5 ip=0x9 ar=0x1ff7 dr=0x0 sp=0x1ff7 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=227  ac=0x5 ip=0xe ar=0x9 dr=0x0 sp=0x1ff7 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=230  ac=0x5 ip=0xf ar=0x1ff6 dr=0x5 sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction MODULO
+  DEBUG   machine:execute_next_instruction tick=232  ac=0x5 ip=0x10 ar=0x1ff6 dr=0xa sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=234  ac=0x35 ip=0x11 ar=0x1ff6 dr=0x30 sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction DECREMENT
+  DEBUG   machine:execute_next_instruction tick=238  ac=0x35 ip=0x12 ar=0x1ff9 dr=0xd1 sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=243  ac=0x35 ip=0x13 ar=0xd1 dr=0x35 sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=246  ac=0x5 ip=0x14 ar=0x1ff6 dr=0x5 sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction DIVIDE
+  DEBUG   machine:execute_next_instruction tick=248  ac=0x0 ip=0x15 ar=0x1ff6 dr=0xa sp=0x1ff6 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=250  ac=0x0 ip=0x16 ar=0x1ff6 dr=0x0 sp=0x1ff6 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=252  ac=0x0 ip=0x19 ar=0x16 dr=0x0 sp=0x1ff6 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=256  ac=0x5 ip=0x1a ar=0x1ff6 dr=0x5 sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=259  ac=0xd1 ip=0x1b ar=0x1ff9 dr=0xd1 sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=263  ac=0xd1 ip=0x24 ar=0x1ff6 dr=0x1c sp=0x1ff6 fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=266  ac=0xd1 ip=0x25 ar=0x1ff5 dr=0xd1 sp=0x1ff5 fl=0x5 stack_top=0xd1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=268  ac=0x0 ip=0x26 ar=0x1ff5 dr=0x0 sp=0x1ff5 fl=0x5 stack_top=0xd1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=271  ac=0x0 ip=0x27 ar=0x1ff4 dr=0x0 sp=0x1ff4 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=276  ac=0x35 ip=0x28 ar=0xd1 dr=0x35 sp=0x1ff4 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=278  ac=0x35 ip=0x29 ar=0xd1 dr=0x0 sp=0x1ff4 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=279  ac=0x35 ip=0x2a ar=0xd1 dr=0x0 sp=0x1ff4 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'recur' <- '5'
+  DEBUG   machine:execute_next_instruction tick=282  ac=0x35 ip=0x2b ar=0x15b4 dr=0x35 sp=0x1ff4 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=286  ac=0x35 ip=0x2c ar=0x1ff5 dr=0xd2 sp=0x1ff4 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=290  ac=0x35 ip=0x2d ar=0x1ff4 dr=0x1 sp=0x1ff4 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=293  ac=0x1 ip=0x2e ar=0x1ff4 dr=0x1 sp=0x1ff4 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=295  ac=0x1 ip=0x2f ar=0x1ff4 dr=0x80 sp=0x1ff4 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=296  ac=0x1 ip=0x30 ar=0x1ff4 dr=0x80 sp=0x1ff4 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=298  ac=0x1 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff4 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=303  ac=0x0 ip=0x28 ar=0xd2 dr=0x0 sp=0x1ff4 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=305  ac=0x0 ip=0x29 ar=0xd2 dr=0x0 sp=0x1ff4 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=307  ac=0x0 ip=0x31 ar=0x29 dr=0x0 sp=0x1ff4 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=311  ac=0x1 ip=0x32 ar=0x1ff4 dr=0x1 sp=0x1ff5 fl=0x5 stack_top=0xd2
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=312  ac=0x1 ip=0x33 ar=0x1ff4 dr=0x1 sp=0x1ff6 fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=316  ac=0x1 ip=0x1c ar=0x1ff6 dr=0x1c sp=0x1ff7 fl=0x5 stack_top=0x5
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=319  ac=0x1 ip=0x1d ar=0x1ff6 dr=0x1 sp=0x1ff6 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=322  ac=0x5 ip=0x1e ar=0x1ff7 dr=0x5 sp=0x1ff6 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=324  ac=0x5 ip=0x1f ar=0x1ff7 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=326  ac=0x5 ip=0x21 ar=0x1f dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=330  ac=0x1 ip=0x22 ar=0x1ff6 dr=0x1 sp=0x1ff7 fl=0x1 stack_top=0x5
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=331  ac=0x1 ip=0x23 ar=0x1ff6 dr=0x1 sp=0x1ff8 fl=0x1 stack_top=0x43
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=335  ac=0x1 ip=0x43 ar=0x1ff8 dr=0x43 sp=0x1ff9 fl=0x1 stack_top=0xd1
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=336  ac=0x1 ip=0x44 ar=0x1ff8 dr=0x43 sp=0x1ffa fl=0x1 stack_top=0xa9
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=340  ac=0x1 ip=0x1 ar=0x1ff9 dr=0x45 sp=0x1ff9 fl=0x1 stack_top=0x45
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=343  ac=0x1 ip=0x2 ar=0x1ff8 dr=0x1 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=346  ac=0xa9 ip=0x3 ar=0x1ffa dr=0xa9 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=348  ac=0xbd ip=0x4 ar=0x1ffa dr=0x14 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=351  ac=0xbd ip=0x5 ar=0x1ffa dr=0xbd sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=353  ac=0x0 ip=0x6 ar=0x1ffa dr=0x0 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=358  ac=0x0 ip=0x7 ar=0xbd dr=0x0 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=361  ac=0x1 ip=0x8 ar=0x1ff8 dr=0x1 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=363  ac=0x1 ip=0x9 ar=0x1ff8 dr=0x0 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=365  ac=0x1 ip=0xe ar=0x9 dr=0x0 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=368  ac=0x1 ip=0xf ar=0x1ff7 dr=0x1 sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction MODULO
+  DEBUG   machine:execute_next_instruction tick=370  ac=0x1 ip=0x10 ar=0x1ff7 dr=0xa sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=372  ac=0x31 ip=0x11 ar=0x1ff7 dr=0x30 sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DECREMENT
+  DEBUG   machine:execute_next_instruction tick=376  ac=0x31 ip=0x12 ar=0x1ffa dr=0xbc sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=381  ac=0x31 ip=0x13 ar=0xbc dr=0x31 sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=384  ac=0x1 ip=0x14 ar=0x1ff7 dr=0x1 sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DIVIDE
+  DEBUG   machine:execute_next_instruction tick=386  ac=0x0 ip=0x15 ar=0x1ff7 dr=0xa sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=388  ac=0x0 ip=0x16 ar=0x1ff7 dr=0x0 sp=0x1ff7 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=390  ac=0x0 ip=0x19 ar=0x16 dr=0x0 sp=0x1ff7 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=394  ac=0x1 ip=0x1a ar=0x1ff7 dr=0x1 sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=397  ac=0xbc ip=0x1b ar=0x1ffa dr=0xbc sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=401  ac=0xbc ip=0x24 ar=0x1ff7 dr=0x1c sp=0x1ff7 fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=404  ac=0xbc ip=0x25 ar=0x1ff6 dr=0xbc sp=0x1ff6 fl=0x5 stack_top=0xbc
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=406  ac=0x0 ip=0x26 ar=0x1ff6 dr=0x0 sp=0x1ff6 fl=0x5 stack_top=0xbc
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=409  ac=0x0 ip=0x27 ar=0x1ff5 dr=0x0 sp=0x1ff5 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=414  ac=0x31 ip=0x28 ar=0xbc dr=0x31 sp=0x1ff5 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=416  ac=0x31 ip=0x29 ar=0xbc dr=0x0 sp=0x1ff5 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=417  ac=0x31 ip=0x2a ar=0xbc dr=0x0 sp=0x1ff5 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'recur5' <- '1'
+  DEBUG   machine:execute_next_instruction tick=420  ac=0x31 ip=0x2b ar=0x15b4 dr=0x31 sp=0x1ff5 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=424  ac=0x31 ip=0x2c ar=0x1ff6 dr=0xbd sp=0x1ff5 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=428  ac=0x31 ip=0x2d ar=0x1ff5 dr=0x1 sp=0x1ff5 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=431  ac=0x1 ip=0x2e ar=0x1ff5 dr=0x1 sp=0x1ff5 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=433  ac=0x1 ip=0x2f ar=0x1ff5 dr=0x80 sp=0x1ff5 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=434  ac=0x1 ip=0x30 ar=0x1ff5 dr=0x80 sp=0x1ff5 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=436  ac=0x1 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff5 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=441  ac=0x0 ip=0x28 ar=0xbd dr=0x0 sp=0x1ff5 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=443  ac=0x0 ip=0x29 ar=0xbd dr=0x0 sp=0x1ff5 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=445  ac=0x0 ip=0x31 ar=0x29 dr=0x0 sp=0x1ff5 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=449  ac=0x1 ip=0x32 ar=0x1ff5 dr=0x1 sp=0x1ff6 fl=0x5 stack_top=0xbd
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=450  ac=0x1 ip=0x33 ar=0x1ff5 dr=0x1 sp=0x1ff7 fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=454  ac=0x1 ip=0x1c ar=0x1ff7 dr=0x1c sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=457  ac=0x1 ip=0x1d ar=0x1ff7 dr=0x1 sp=0x1ff7 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=460  ac=0x1 ip=0x1e ar=0x1ff8 dr=0x1 sp=0x1ff7 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=462  ac=0x1 ip=0x1f ar=0x1ff8 dr=0x0 sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=464  ac=0x1 ip=0x21 ar=0x1f dr=0x0 sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=468  ac=0x1 ip=0x22 ar=0x1ff7 dr=0x1 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=469  ac=0x1 ip=0x23 ar=0x1ff7 dr=0x1 sp=0x1ff9 fl=0x1 stack_top=0x45
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=473  ac=0x1 ip=0x45 ar=0x1ff9 dr=0x45 sp=0x1ffa fl=0x1 stack_top=0xbc
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=474  ac=0x1 ip=0x46 ar=0x1ff9 dr=0x45 sp=0x1ffb fl=0x1 stack_top=0x94
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=478  ac=0x1 ip=0x1 ar=0x1ffa dr=0x47 sp=0x1ffa fl=0x1 stack_top=0x47
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=481  ac=0x1 ip=0x2 ar=0x1ff9 dr=0x1 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=484  ac=0x94 ip=0x3 ar=0x1ffb dr=0x94 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=486  ac=0xa8 ip=0x4 ar=0x1ffb dr=0x14 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=489  ac=0xa8 ip=0x5 ar=0x1ffb dr=0xa8 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=491  ac=0x0 ip=0x6 ar=0x1ffb dr=0x0 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=496  ac=0x0 ip=0x7 ar=0xa8 dr=0x0 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=499  ac=0x1 ip=0x8 ar=0x1ff9 dr=0x1 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=501  ac=0x1 ip=0x9 ar=0x1ff9 dr=0x0 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=503  ac=0x1 ip=0xe ar=0x9 dr=0x0 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=506  ac=0x1 ip=0xf ar=0x1ff8 dr=0x1 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction MODULO
+  DEBUG   machine:execute_next_instruction tick=508  ac=0x1 ip=0x10 ar=0x1ff8 dr=0xa sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=510  ac=0x31 ip=0x11 ar=0x1ff8 dr=0x30 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DECREMENT
+  DEBUG   machine:execute_next_instruction tick=514  ac=0x31 ip=0x12 ar=0x1ffb dr=0xa7 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=519  ac=0x31 ip=0x13 ar=0xa7 dr=0x31 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=522  ac=0x1 ip=0x14 ar=0x1ff8 dr=0x1 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DIVIDE
+  DEBUG   machine:execute_next_instruction tick=524  ac=0x0 ip=0x15 ar=0x1ff8 dr=0xa sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=526  ac=0x0 ip=0x16 ar=0x1ff8 dr=0x0 sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=528  ac=0x0 ip=0x19 ar=0x16 dr=0x0 sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=532  ac=0x1 ip=0x1a ar=0x1ff8 dr=0x1 sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=535  ac=0xa7 ip=0x1b ar=0x1ffb dr=0xa7 sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=539  ac=0xa7 ip=0x24 ar=0x1ff8 dr=0x1c sp=0x1ff8 fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=542  ac=0xa7 ip=0x25 ar=0x1ff7 dr=0xa7 sp=0x1ff7 fl=0x5 stack_top=0xa7
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=544  ac=0x0 ip=0x26 ar=0x1ff7 dr=0x0 sp=0x1ff7 fl=0x5 stack_top=0xa7
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=547  ac=0x0 ip=0x27 ar=0x1ff6 dr=0x0 sp=0x1ff6 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=552  ac=0x31 ip=0x28 ar=0xa7 dr=0x31 sp=0x1ff6 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=554  ac=0x31 ip=0x29 ar=0xa7 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=555  ac=0x31 ip=0x2a ar=0xa7 dr=0x0 sp=0x1ff6 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'recur51' <- '1'
+  DEBUG   machine:execute_next_instruction tick=558  ac=0x31 ip=0x2b ar=0x15b4 dr=0x31 sp=0x1ff6 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=562  ac=0x31 ip=0x2c ar=0x1ff7 dr=0xa8 sp=0x1ff6 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=566  ac=0x31 ip=0x2d ar=0x1ff6 dr=0x1 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=569  ac=0x1 ip=0x2e ar=0x1ff6 dr=0x1 sp=0x1ff6 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=571  ac=0x1 ip=0x2f ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=572  ac=0x1 ip=0x30 ar=0x1ff6 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=574  ac=0x1 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff6 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=579  ac=0x0 ip=0x28 ar=0xa8 dr=0x0 sp=0x1ff6 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=581  ac=0x0 ip=0x29 ar=0xa8 dr=0x0 sp=0x1ff6 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=583  ac=0x0 ip=0x31 ar=0x29 dr=0x0 sp=0x1ff6 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=587  ac=0x1 ip=0x32 ar=0x1ff6 dr=0x1 sp=0x1ff7 fl=0x5 stack_top=0xa8
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=588  ac=0x1 ip=0x33 ar=0x1ff6 dr=0x1 sp=0x1ff8 fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=592  ac=0x1 ip=0x1c ar=0x1ff8 dr=0x1c sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=595  ac=0x1 ip=0x1d ar=0x1ff8 dr=0x1 sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=598  ac=0x1 ip=0x1e ar=0x1ff9 dr=0x1 sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=600  ac=0x1 ip=0x1f ar=0x1ff9 dr=0x0 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=602  ac=0x1 ip=0x21 ar=0x1f dr=0x0 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=606  ac=0x1 ip=0x22 ar=0x1ff8 dr=0x1 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=607  ac=0x1 ip=0x23 ar=0x1ff8 dr=0x1 sp=0x1ffa fl=0x1 stack_top=0x47
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=611  ac=0x1 ip=0x47 ar=0x1ffa dr=0x47 sp=0x1ffb fl=0x1 stack_top=0xa7
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=612  ac=0x1 ip=0x48 ar=0x1ffa dr=0x47 sp=0x1ffc fl=0x1 stack_top=0x7f
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=616  ac=0x1 ip=0x1 ar=0x1ffb dr=0x49 sp=0x1ffb fl=0x1 stack_top=0x49
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=619  ac=0x1 ip=0x2 ar=0x1ffa dr=0x1 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=622  ac=0x7f ip=0x3 ar=0x1ffc dr=0x7f sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=624  ac=0x93 ip=0x4 ar=0x1ffc dr=0x14 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=627  ac=0x93 ip=0x5 ar=0x1ffc dr=0x93 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=629  ac=0x0 ip=0x6 ar=0x1ffc dr=0x0 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=634  ac=0x0 ip=0x7 ar=0x93 dr=0x0 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=637  ac=0x1 ip=0x8 ar=0x1ffa dr=0x1 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=639  ac=0x1 ip=0x9 ar=0x1ffa dr=0x0 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=641  ac=0x1 ip=0xe ar=0x9 dr=0x0 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=644  ac=0x1 ip=0xf ar=0x1ff9 dr=0x1 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction MODULO
+  DEBUG   machine:execute_next_instruction tick=646  ac=0x1 ip=0x10 ar=0x1ff9 dr=0xa sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=648  ac=0x31 ip=0x11 ar=0x1ff9 dr=0x30 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DECREMENT
+  DEBUG   machine:execute_next_instruction tick=652  ac=0x31 ip=0x12 ar=0x1ffc dr=0x92 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=657  ac=0x31 ip=0x13 ar=0x92 dr=0x31 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=660  ac=0x1 ip=0x14 ar=0x1ff9 dr=0x1 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DIVIDE
+  DEBUG   machine:execute_next_instruction tick=662  ac=0x0 ip=0x15 ar=0x1ff9 dr=0xa sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=664  ac=0x0 ip=0x16 ar=0x1ff9 dr=0x0 sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=666  ac=0x0 ip=0x19 ar=0x16 dr=0x0 sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=670  ac=0x1 ip=0x1a ar=0x1ff9 dr=0x1 sp=0x1ffa fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=673  ac=0x92 ip=0x1b ar=0x1ffc dr=0x92 sp=0x1ffa fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=677  ac=0x92 ip=0x24 ar=0x1ff9 dr=0x1c sp=0x1ff9 fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=680  ac=0x92 ip=0x25 ar=0x1ff8 dr=0x92 sp=0x1ff8 fl=0x5 stack_top=0x92
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=682  ac=0x0 ip=0x26 ar=0x1ff8 dr=0x0 sp=0x1ff8 fl=0x5 stack_top=0x92
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=685  ac=0x0 ip=0x27 ar=0x1ff7 dr=0x0 sp=0x1ff7 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=690  ac=0x31 ip=0x28 ar=0x92 dr=0x31 sp=0x1ff7 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=692  ac=0x31 ip=0x29 ar=0x92 dr=0x0 sp=0x1ff7 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=693  ac=0x31 ip=0x2a ar=0x92 dr=0x0 sp=0x1ff7 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'recur511' <- '1'
+  DEBUG   machine:execute_next_instruction tick=696  ac=0x31 ip=0x2b ar=0x15b4 dr=0x31 sp=0x1ff7 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=700  ac=0x31 ip=0x2c ar=0x1ff8 dr=0x93 sp=0x1ff7 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=704  ac=0x31 ip=0x2d ar=0x1ff7 dr=0x1 sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=707  ac=0x1 ip=0x2e ar=0x1ff7 dr=0x1 sp=0x1ff7 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=709  ac=0x1 ip=0x2f ar=0x1ff7 dr=0x80 sp=0x1ff7 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=710  ac=0x1 ip=0x30 ar=0x1ff7 dr=0x80 sp=0x1ff7 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=712  ac=0x1 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff7 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=717  ac=0x0 ip=0x28 ar=0x93 dr=0x0 sp=0x1ff7 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=719  ac=0x0 ip=0x29 ar=0x93 dr=0x0 sp=0x1ff7 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=721  ac=0x0 ip=0x31 ar=0x29 dr=0x0 sp=0x1ff7 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=725  ac=0x1 ip=0x32 ar=0x1ff7 dr=0x1 sp=0x1ff8 fl=0x5 stack_top=0x93
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=726  ac=0x1 ip=0x33 ar=0x1ff7 dr=0x1 sp=0x1ff9 fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=730  ac=0x1 ip=0x1c ar=0x1ff9 dr=0x1c sp=0x1ffa fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=733  ac=0x1 ip=0x1d ar=0x1ff9 dr=0x1 sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=736  ac=0x1 ip=0x1e ar=0x1ffa dr=0x1 sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=738  ac=0x1 ip=0x1f ar=0x1ffa dr=0x0 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=740  ac=0x1 ip=0x21 ar=0x1f dr=0x0 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=744  ac=0x1 ip=0x22 ar=0x1ff9 dr=0x1 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=745  ac=0x1 ip=0x23 ar=0x1ff9 dr=0x1 sp=0x1ffb fl=0x1 stack_top=0x49
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=749  ac=0x1 ip=0x49 ar=0x1ffb dr=0x49 sp=0x1ffc fl=0x1 stack_top=0x92
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=750  ac=0x1 ip=0x4a ar=0x1ffb dr=0x49 sp=0x1ffd fl=0x1 stack_top=0x6a
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=754  ac=0x1 ip=0x1 ar=0x1ffc dr=0x4b sp=0x1ffc fl=0x1 stack_top=0x4b
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=757  ac=0x1 ip=0x2 ar=0x1ffb dr=0x1 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=760  ac=0x6a ip=0x3 ar=0x1ffd dr=0x6a sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=762  ac=0x7e ip=0x4 ar=0x1ffd dr=0x14 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=765  ac=0x7e ip=0x5 ar=0x1ffd dr=0x7e sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=767  ac=0x0 ip=0x6 ar=0x1ffd dr=0x0 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=772  ac=0x0 ip=0x7 ar=0x7e dr=0x0 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=775  ac=0x1 ip=0x8 ar=0x1ffb dr=0x1 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=777  ac=0x1 ip=0x9 ar=0x1ffb dr=0x0 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=779  ac=0x1 ip=0xe ar=0x9 dr=0x0 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=782  ac=0x1 ip=0xf ar=0x1ffa dr=0x1 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction MODULO
+  DEBUG   machine:execute_next_instruction tick=784  ac=0x1 ip=0x10 ar=0x1ffa dr=0xa sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=786  ac=0x31 ip=0x11 ar=0x1ffa dr=0x30 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DECREMENT
+  DEBUG   machine:execute_next_instruction tick=790  ac=0x31 ip=0x12 ar=0x1ffd dr=0x7d sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=795  ac=0x31 ip=0x13 ar=0x7d dr=0x31 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=798  ac=0x1 ip=0x14 ar=0x1ffa dr=0x1 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DIVIDE
+  DEBUG   machine:execute_next_instruction tick=800  ac=0x0 ip=0x15 ar=0x1ffa dr=0xa sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=802  ac=0x0 ip=0x16 ar=0x1ffa dr=0x0 sp=0x1ffa fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=804  ac=0x0 ip=0x19 ar=0x16 dr=0x0 sp=0x1ffa fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=808  ac=0x1 ip=0x1a ar=0x1ffa dr=0x1 sp=0x1ffb fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=811  ac=0x7d ip=0x1b ar=0x1ffd dr=0x7d sp=0x1ffb fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=815  ac=0x7d ip=0x24 ar=0x1ffa dr=0x1c sp=0x1ffa fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=818  ac=0x7d ip=0x25 ar=0x1ff9 dr=0x7d sp=0x1ff9 fl=0x5 stack_top=0x7d
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=820  ac=0x0 ip=0x26 ar=0x1ff9 dr=0x0 sp=0x1ff9 fl=0x5 stack_top=0x7d
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=823  ac=0x0 ip=0x27 ar=0x1ff8 dr=0x0 sp=0x1ff8 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=828  ac=0x31 ip=0x28 ar=0x7d dr=0x31 sp=0x1ff8 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=830  ac=0x31 ip=0x29 ar=0x7d dr=0x0 sp=0x1ff8 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=831  ac=0x31 ip=0x2a ar=0x7d dr=0x0 sp=0x1ff8 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'recur5111' <- '1'
+  DEBUG   machine:execute_next_instruction tick=834  ac=0x31 ip=0x2b ar=0x15b4 dr=0x31 sp=0x1ff8 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=838  ac=0x31 ip=0x2c ar=0x1ff9 dr=0x7e sp=0x1ff8 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=842  ac=0x31 ip=0x2d ar=0x1ff8 dr=0x1 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=845  ac=0x1 ip=0x2e ar=0x1ff8 dr=0x1 sp=0x1ff8 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=847  ac=0x1 ip=0x2f ar=0x1ff8 dr=0x80 sp=0x1ff8 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=848  ac=0x1 ip=0x30 ar=0x1ff8 dr=0x80 sp=0x1ff8 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=850  ac=0x1 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff8 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=855  ac=0x0 ip=0x28 ar=0x7e dr=0x0 sp=0x1ff8 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=857  ac=0x0 ip=0x29 ar=0x7e dr=0x0 sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=859  ac=0x0 ip=0x31 ar=0x29 dr=0x0 sp=0x1ff8 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=863  ac=0x1 ip=0x32 ar=0x1ff8 dr=0x1 sp=0x1ff9 fl=0x5 stack_top=0x7e
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=864  ac=0x1 ip=0x33 ar=0x1ff8 dr=0x1 sp=0x1ffa fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=868  ac=0x1 ip=0x1c ar=0x1ffa dr=0x1c sp=0x1ffb fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=871  ac=0x1 ip=0x1d ar=0x1ffa dr=0x1 sp=0x1ffa fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=874  ac=0x1 ip=0x1e ar=0x1ffb dr=0x1 sp=0x1ffa fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=876  ac=0x1 ip=0x1f ar=0x1ffb dr=0x0 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=878  ac=0x1 ip=0x21 ar=0x1f dr=0x0 sp=0x1ffa fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=882  ac=0x1 ip=0x22 ar=0x1ffa dr=0x1 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=883  ac=0x1 ip=0x23 ar=0x1ffa dr=0x1 sp=0x1ffc fl=0x1 stack_top=0x4b
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=887  ac=0x1 ip=0x4b ar=0x1ffc dr=0x4b sp=0x1ffd fl=0x1 stack_top=0x7d
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=888  ac=0x1 ip=0x4c ar=0x1ffc dr=0x4b sp=0x1ffe fl=0x1 stack_top=0x55
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=892  ac=0x1 ip=0x1 ar=0x1ffd dr=0x4d sp=0x1ffd fl=0x1 stack_top=0x4d
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=895  ac=0x1 ip=0x2 ar=0x1ffc dr=0x1 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=898  ac=0x55 ip=0x3 ar=0x1ffe dr=0x55 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=900  ac=0x69 ip=0x4 ar=0x1ffe dr=0x14 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=903  ac=0x69 ip=0x5 ar=0x1ffe dr=0x69 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=905  ac=0x0 ip=0x6 ar=0x1ffe dr=0x0 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=910  ac=0x0 ip=0x7 ar=0x69 dr=0x0 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=913  ac=0x1 ip=0x8 ar=0x1ffc dr=0x1 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=915  ac=0x1 ip=0x9 ar=0x1ffc dr=0x0 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=917  ac=0x1 ip=0xe ar=0x9 dr=0x0 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=920  ac=0x1 ip=0xf ar=0x1ffb dr=0x1 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction MODULO
+  DEBUG   machine:execute_next_instruction tick=922  ac=0x1 ip=0x10 ar=0x1ffb dr=0xa sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction ADD
+  DEBUG   machine:execute_next_instruction tick=924  ac=0x31 ip=0x11 ar=0x1ffb dr=0x30 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DECREMENT
+  DEBUG   machine:execute_next_instruction tick=928  ac=0x31 ip=0x12 ar=0x1ffe dr=0x68 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:execute_next_instruction tick=933  ac=0x31 ip=0x13 ar=0x68 dr=0x31 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=936  ac=0x1 ip=0x14 ar=0x1ffb dr=0x1 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction DIVIDE
+  DEBUG   machine:execute_next_instruction tick=938  ac=0x0 ip=0x15 ar=0x1ffb dr=0xa sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=940  ac=0x0 ip=0x16 ar=0x1ffb dr=0x0 sp=0x1ffb fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=942  ac=0x0 ip=0x19 ar=0x16 dr=0x0 sp=0x1ffb fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=946  ac=0x1 ip=0x1a ar=0x1ffb dr=0x1 sp=0x1ffc fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=949  ac=0x68 ip=0x1b ar=0x1ffe dr=0x68 sp=0x1ffc fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction CALL
+  DEBUG   machine:execute_next_instruction tick=953  ac=0x68 ip=0x24 ar=0x1ffb dr=0x1c sp=0x1ffb fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=956  ac=0x68 ip=0x25 ar=0x1ffa dr=0x68 sp=0x1ffa fl=0x5 stack_top=0x68
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=958  ac=0x0 ip=0x26 ar=0x1ffa dr=0x0 sp=0x1ffa fl=0x5 stack_top=0x68
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=961  ac=0x0 ip=0x27 ar=0x1ff9 dr=0x0 sp=0x1ff9 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=966  ac=0x31 ip=0x28 ar=0x68 dr=0x31 sp=0x1ff9 fl=0x5 stack_top=0x0
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=968  ac=0x31 ip=0x29 ar=0x68 dr=0x0 sp=0x1ff9 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=969  ac=0x31 ip=0x2a ar=0x68 dr=0x0 sp=0x1ff9 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction STORE
+  DEBUG   machine:signal_write_memory output: 'recur51111' <- '1'
+  DEBUG   machine:execute_next_instruction tick=972  ac=0x31 ip=0x2b ar=0x15b4 dr=0x31 sp=0x1ff9 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=976  ac=0x31 ip=0x2c ar=0x1ffa dr=0x69 sp=0x1ff9 fl=0x1 stack_top=0x0
+  DEBUG   machine:execute_next_instruction INCREMENT
+  DEBUG   machine:execute_next_instruction tick=980  ac=0x31 ip=0x2d ar=0x1ff9 dr=0x1 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=983  ac=0x1 ip=0x2e ar=0x1ff9 dr=0x1 sp=0x1ff9 fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=985  ac=0x1 ip=0x2f ar=0x1ff9 dr=0x80 sp=0x1ff9 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=986  ac=0x1 ip=0x30 ar=0x1ff9 dr=0x80 sp=0x1ff9 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP
+  DEBUG   machine:execute_next_instruction tick=988  ac=0x1 ip=0x27 ar=0x30 dr=0x80 sp=0x1ff9 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=993  ac=0x0 ip=0x28 ar=0x69 dr=0x0 sp=0x1ff9 fl=0x8 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=995  ac=0x0 ip=0x29 ar=0x69 dr=0x0 sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_EQUAL
+  DEBUG   machine:execute_next_instruction tick=997  ac=0x0 ip=0x31 ar=0x29 dr=0x0 sp=0x1ff9 fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=1001 ac=0x1 ip=0x32 ar=0x1ff9 dr=0x1 sp=0x1ffa fl=0x5 stack_top=0x69
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=1002 ac=0x1 ip=0x33 ar=0x1ff9 dr=0x1 sp=0x1ffb fl=0x5 stack_top=0x1c
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=1006 ac=0x1 ip=0x1c ar=0x1ffb dr=0x1c sp=0x1ffc fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction PUSH
+  DEBUG   machine:execute_next_instruction tick=1009 ac=0x1 ip=0x1d ar=0x1ffb dr=0x1 sp=0x1ffb fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction LOAD
+  DEBUG   machine:execute_next_instruction tick=1012 ac=0x1 ip=0x1e ar=0x1ffc dr=0x1 sp=0x1ffb fl=0x5 stack_top=0x1
+  DEBUG   machine:execute_next_instruction COMPARE
+  DEBUG   machine:execute_next_instruction tick=1014 ac=0x1 ip=0x1f ar=0x1ffc dr=0x0 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction JUMP_GREATER_EQUAL
+  DEBUG   machine:execute_next_instruction tick=1016 ac=0x1 ip=0x21 ar=0x1f dr=0x0 sp=0x1ffb fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POP
+  DEBUG   machine:execute_next_instruction tick=1020 ac=0x1 ip=0x22 ar=0x1ffb dr=0x1 sp=0x1ffc fl=0x1 stack_top=0x1
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=1021 ac=0x1 ip=0x23 ar=0x1ffb dr=0x1 sp=0x1ffd fl=0x1 stack_top=0x4d
+  DEBUG   machine:execute_next_instruction RETURN
+  DEBUG   machine:execute_next_instruction tick=1025 ac=0x1 ip=0x4d ar=0x1ffd dr=0x4d sp=0x1ffe fl=0x1 stack_top=0x68
+  DEBUG   machine:execute_next_instruction POPN
+  DEBUG   machine:execute_next_instruction tick=1026 ac=0x1 ip=0x4e ar=0x1ffd dr=0x4d sp=0x1fff fl=0x1 stack_top=?
+  DEBUG   machine:execute_next_instruction HALT
+  INFO    machine:main          instr: 368 ticks: 1026
